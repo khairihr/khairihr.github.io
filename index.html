@@ -5,212 +5,238 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Khairi Hibatullah Ridho</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234f46e5'/><text x='50' y='73' font-size='66' font-family='Helvetica,Arial,sans-serif' font-weight='700' fill='white' text-anchor='middle'>K</text></svg>" />
-<meta name="description" content="Khairi Hibatullah Ridho — software engineer and tech lead at Innovasia, building a multi-tenant WhatsApp Business CRM on Laravel: billing systems, partner APIs, and performance at scale." />
-<meta property="og:title" content="Khairi Hibatullah Ridho — Software Engineer" />
+<meta name="description" content="Khairi Hibatullah Ridho, software engineer and tech lead at Innovasia. I build and run a multi-tenant WhatsApp Business CRM on Laravel: billing systems, partner APIs, and performance at scale." />
+<meta property="og:title" content="Khairi Hibatullah Ridho, Software Engineer" />
 <meta property="og:description" content="I build and run a multi-tenant WhatsApp Business CRM: billing systems, partner APIs, and performance at scale." />
 <meta property="og:type" content="website" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root{
     --bg:#fdfdfc;
-    --text:#1b1b1d;
+    --surface:#ffffff;
+    --text:#19191c;
+    --text-2:#3a3a40;
     --muted:#6c6c74;
     --faint:#9a9aa2;
     --accent:#4f46e5;
-    --line:#e8e8ea;
-    --maxw:680px;
+    --accent-soft:#eef0fe;
+    --line:#e9e9ec;
+    --maxw:980px;
+    --shadow:0 1px 2px rgba(0,0,0,.03), 0 10px 30px -16px rgba(20,20,40,.14);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{
     font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    font-size:16.5px;
-    line-height:1.72;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
+    background:var(--bg);color:var(--text);
+    font-size:16.5px;line-height:1.7;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
   }
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
   a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline;text-underline-offset:3px}
   .mono{font-family:'JetBrains Mono',monospace}
 
-  /* HEADER */
-  header{padding:84px 0 8px}
-  .name{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.2}
-  .role{font-size:16.5px;color:var(--muted);margin-top:6px;font-weight:500}
-  .intro{margin-top:26px;max-width:600px}
-  .intro p{margin-bottom:16px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:40;background:rgba(253,253,252,.8);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:58px}
+  .brand{font-weight:700;letter-spacing:-.02em;font-size:15.5px;color:var(--text)}
+  .brand span{color:var(--accent)}
+  .nav-links{display:flex;gap:26px;font-size:14px}
+  .nav-links a{color:var(--muted);font-weight:500}
+  .nav-links a:hover{color:var(--text)}
+  @media(max-width:600px){.nav-links a:not(.r){display:none}}
+
+  /* HERO */
+  header.hero{padding:78px 0 56px}
+  .name{font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:-.035em;line-height:1.05}
+  .role{font-size:clamp(16px,2vw,19px);color:var(--muted);margin-top:12px;font-weight:500}
+  .role b{color:var(--accent);font-weight:600}
+  .intro{margin-top:28px;max-width:620px}
+  .intro p{margin-bottom:16px;color:var(--text-2)}
   .intro p:last-child{margin-bottom:0}
-  .links{display:flex;flex-wrap:wrap;gap:0 20px;margin-top:26px;font-size:15px}
-  .links a{color:var(--text);font-weight:500;display:inline-flex;align-items:center;gap:5px}
-  .links a:hover{color:var(--accent)}
-  .links .arrow{color:var(--faint);font-size:13px}
-  .avail{margin-top:22px;font-size:14.5px;color:var(--muted);display:inline-flex;align-items:center;gap:9px}
+  .actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:7px;font-size:14.5px;font-weight:500;padding:9px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--text);transition:border-color .18s,transform .18s,box-shadow .18s}
+  .btn:hover{border-color:#d4d4da;transform:translateY(-1px);box-shadow:var(--shadow)}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.primary:hover{background:#4338ca;border-color:#4338ca}
+  .btn .a{color:var(--faint);font-size:12px}
+  .btn.primary .a{color:rgba(255,255,255,.7)}
+  .avail{margin-top:26px;font-size:14px;color:var(--muted);display:inline-flex;align-items:center;gap:9px}
   .avail .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;flex:none}
 
-  /* SECTIONS */
-  section{padding:44px 0;border-top:1px solid var(--line);margin-top:40px}
-  section:first-of-type{margin-top:48px}
-  .label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.04em;color:var(--faint);text-transform:uppercase;margin-bottom:26px}
-  h2.h{font-size:15px;font-weight:600;margin-bottom:6px}
+  /* SECTION */
+  section{padding:54px 0;border-top:1px solid var(--line)}
+  .label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--faint);text-transform:uppercase;margin-bottom:30px;display:flex;align-items:center;gap:12px}
+  .label::after{content:'';height:1px;flex:1;background:var(--line)}
 
-  .about p{margin-bottom:16px;color:#2e2e33}
+  .about{max-width:660px}
+  .about p{color:var(--text-2);margin-bottom:16px}
   .about p:last-child{margin-bottom:0}
 
-  /* PROJECTS */
-  .proj{padding:22px 0;border-bottom:1px solid var(--line)}
-  .proj:last-child{border-bottom:none;padding-bottom:0}
-  .proj-h{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap}
-  .proj-h h3{font-size:17px;font-weight:600;letter-spacing:-.01em}
-  .proj-h .tag{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--faint);white-space:nowrap}
-  .proj p{color:#3a3a40;font-size:15.5px;margin-top:8px}
-  .proj .tech{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--muted);margin-top:10px}
-  .also{font-size:15.5px;color:#3a3a40;margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+  /* WORK */
+  .work{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#e0e0e6}
+  .card.feat{grid-column:1 / -1}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
+  .card h3{font-size:18px;font-weight:600;letter-spacing:-.01em;margin-bottom:9px}
+  .card p{color:var(--text-2);font-size:15px}
+  .tech{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+  .tech span{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);background:var(--bg);border:1px solid var(--line);padding:3px 9px;border-radius:7px}
+  .also{font-size:15px;color:var(--text-2);margin-top:18px;grid-column:1 / -1}
   .also b{color:var(--text);font-weight:600}
+  @media(max-width:640px){.work{grid-template-columns:1fr}}
 
   /* EXPERIENCE */
-  .exp{display:flex;gap:22px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .exp{display:flex;gap:26px;padding:20px 0;border-bottom:1px solid var(--line)}
   .exp:last-child{border-bottom:none;padding-bottom:0}
-  .exp .when{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--faint);flex:none;width:118px;padding-top:2px}
-  .exp .what h3{font-size:16px;font-weight:600}
-  .exp .what .co{font-size:14.5px;color:var(--muted);margin-bottom:7px}
-  .exp .what p{font-size:15px;color:#3a3a40}
-  @media(max-width:560px){
-    .exp{flex-direction:column;gap:4px}
-    .exp .when{width:auto}
-  }
+  .exp .when{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--faint);flex:none;width:130px;padding-top:3px}
+  .exp h3{font-size:16.5px;font-weight:600}
+  .exp .co{font-size:14.5px;color:var(--muted);margin-bottom:7px}
+  .exp p{font-size:15px;color:var(--text-2)}
+  @media(max-width:560px){.exp{flex-direction:column;gap:5px}.exp .when{width:auto}}
 
-  /* SKILLS */
-  .tech-list{font-size:15.5px;color:#3a3a40;line-height:2}
-  .tech-list b{color:var(--text);font-weight:600;font-family:'JetBrains Mono',monospace;font-size:13px}
+  /* TOOLS */
+  .tools{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .tool h4{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:11px}
+  .tool .row{display:flex;flex-wrap:wrap;gap:7px}
+  .tool .row span{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--text-2);background:var(--surface);border:1px solid var(--line);padding:4px 10px;border-radius:8px}
+  @media(max-width:560px){.tools{grid-template-columns:1fr}}
 
   /* FOOTER */
-  footer{border-top:1px solid var(--line);margin-top:40px;padding:34px 0 60px;font-size:13.5px;color:var(--faint)}
+  footer{border-top:1px solid var(--line);padding:36px 0 64px;font-size:13.5px;color:var(--faint);line-height:1.9}
   footer a{color:var(--muted)}
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <div class="name">Khairi Hibatullah Ridho</div>
-    <div class="role">Software engineer · Tech lead at Innovasia</div>
+<nav>
+  <div class="wrap nav-in">
+    <a href="#" class="brand">Khairi<span>.</span></a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="cv.html" class="r" target="_blank" rel="noopener">Résumé</a>
+    </div>
+  </div>
+</nav>
 
-    <div class="intro">
-      <p>I build and run a multi-tenant WhatsApp Business CRM used by organizations across Indonesia. It handles millions of contacts, billing against Meta's messaging platform, and the APIs that partners integrate with. I started there fixing bugs in early 2025 and now lead its engineering.</p>
+<header class="hero">
+  <div class="wrap">
+    <h1 class="name reveal">Khairi Hibatullah Ridho</h1>
+    <div class="role reveal">Software engineer · <b>Tech lead at Innovasia</b></div>
+
+    <div class="intro reveal">
+      <p>I build and run a multi-tenant WhatsApp Business CRM used by organizations across Indonesia. It handles millions of contacts, billing against Meta's messaging platform, and the APIs that partners integrate with. I started fixing bugs there in early 2025 and now lead its engineering.</p>
       <p>I'm most useful on the parts that are easy to get wrong: billing that can't lose money, APIs other companies build on, and keeping things fast as the data grows.</p>
     </div>
 
-    <div class="links">
-      <a href="https://github.com/khairihr" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
-      <a href="https://www.linkedin.com/in/khairihr/" target="_blank" rel="noopener">LinkedIn <span class="arrow">↗</span></a>
-      <a href="mailto:khairihr5@gmail.com">Email <span class="arrow">↗</span></a>
-      <a href="cv.html" target="_blank" rel="noopener">Résumé <span class="arrow">↗</span></a>
+    <div class="actions reveal">
+      <a href="mailto:khairihr5@gmail.com" class="btn primary">Get in touch <span class="a">↗</span></a>
+      <a href="https://github.com/khairihr" target="_blank" rel="noopener" class="btn">GitHub <span class="a">↗</span></a>
+      <a href="https://www.linkedin.com/in/khairihr/" target="_blank" rel="noopener" class="btn">LinkedIn <span class="a">↗</span></a>
+      <a href="cv.html" target="_blank" rel="noopener" class="btn">Résumé <span class="a">↗</span></a>
     </div>
 
-    <div class="avail"><span class="dot"></span> Open to new roles — remote or relocation</div>
+    <div class="avail reveal"><span class="dot"></span> Open to new roles, remote or relocation</div>
   </div>
 </header>
 
-<section class="about">
+<section id="about">
   <div class="wrap">
-    <div class="label">About</div>
-    <p>The product is a Laravel monolith with a Node.js service for high-volume message sending, talking to Meta's Graph API and serving many tenant companies from one codebase. Over the past year I've grown from maintenance work into owning the architecture — deciding how new systems are built and making sure the ones in production stay reliable.</p>
-    <p>I lean pragmatic. I'd rather ship something correct and observable than something clever, and I spend real time on the unglamorous parts: idempotency, indexes, lock contention, and logs you can actually debug from. I also care about how software feels, so I led a UI refresh across the whole product.</p>
+    <div class="label reveal">About</div>
+    <div class="about reveal">
+      <p>The product is a Laravel monolith with a Node.js service for high-volume message sending, talking to Meta's Graph API and serving many tenant companies from one codebase. Over the past year I've grown from maintenance work into owning the architecture: deciding how new systems are built, and keeping the ones in production reliable.</p>
+      <p>I lean pragmatic. I'd rather ship something correct and observable than something clever, and I spend real time on the unglamorous parts: idempotency, indexes, lock contention, and logs you can actually debug from. I also care about how software feels, so I led a UI refresh across the whole product.</p>
+    </div>
   </div>
 </section>
 
-<section>
+<section id="work">
   <div class="wrap">
-    <div class="label">Selected work</div>
+    <div class="label reveal">Selected work</div>
+    <div class="work">
 
-    <div class="proj">
-      <div class="proj-h">
-        <h3>Kuota Pesan — usage-based billing engine</h3>
-        <span class="tag">in production</span>
-      </div>
-      <p>Some partners pay Meta's messaging fees through the company's own card, so any send that wasn't metered was money quietly lost. I built the engine that prices each message from Meta's pricing data and deducts prepaid credit in real time from the billing webhook — idempotent and deadlock-safe, so it holds up against live traffic. It rolled out in stages (report, then charge, then block) behind safety gates, with reconciliation jobs to recover historical leakage.</p>
-      <div class="tech">Laravel · MySQL · Meta Graph API · scheduled &amp; queued jobs</div>
-    </div>
+      <article class="card feat reveal">
+        <div class="kicker">Billing</div>
+        <h3>Kuota Pesan, a usage-based billing engine</h3>
+        <p>Some partners pay Meta's messaging fees through the company's own card, so any send that wasn't metered was money quietly lost. I built the engine that prices each message from Meta's pricing data and deducts prepaid credit in real time from the billing webhook: idempotent and deadlock-safe, so it holds up against live traffic. It rolled out in stages (report, then charge, then block) behind safety gates, with reconciliation jobs to recover historical leakage.</p>
+        <div class="tech"><span>Laravel</span><span>MySQL</span><span>Meta Graph API</span><span>scheduled &amp; queued jobs</span><span>idempotency</span></div>
+      </article>
 
-    <div class="proj">
-      <div class="proj-h">
+      <article class="card reveal">
+        <div class="kicker">AI feature</div>
         <h3>AI sales-funnel labeling</h3>
-        <span class="tag">paid feature</span>
-      </div>
-      <p>A feature that reads each contact's conversation and labels their funnel stage using an LLM. A dedicated worker runs it rate-limited and distinguishes "out of credit" from "rate-limited" so it never wastes spend retrying a call that can't succeed. Stage labels show up inline in the chat list; usage is metered and billed.</p>
-      <div class="tech">OpenAI API · queue workers · Laravel</div>
-    </div>
+        <p>Reads each contact's conversation and labels their funnel stage using an LLM. A dedicated worker runs it rate-limited and tells the difference between "out of credit" and "rate-limited", so it never wastes spend retrying a call that can't succeed. Labels show up inline in the chat list; usage is metered and billed.</p>
+        <div class="tech"><span>OpenAI API</span><span>queue workers</span><span>Laravel</span></div>
+      </article>
 
-    <div class="proj">
-      <div class="proj-h">
+      <article class="card reveal">
+        <div class="kicker">Integration</div>
         <h3>Meta Flow webhook bridge</h3>
-        <span class="tag">in production</span>
-      </div>
-      <p>Reworked how Meta Flow callbacks are handled so each receiver URL carries its own secret — the way Stripe signs webhooks — letting a single tenant route different flows to different backends. I removed the N+1 queries on the hot path, added caching and timeouts, and built a self-serve fix for when a tenant's public key drifts out of sync (previously a support ticket every time).</p>
-      <div class="tech">Webhooks · HMAC signing · caching</div>
-    </div>
+        <p>Reworked how Meta Flow callbacks are handled so each receiver URL carries its own secret, the way Stripe signs webhooks, letting one tenant route different flows to different backends. I removed the N+1 queries on the hot path, added caching and timeouts, and built a self-serve fix for when a tenant's public key drifts out of sync (previously a support ticket every time).</p>
+        <div class="tech"><span>Webhooks</span><span>HMAC signing</span><span>caching</span></div>
+      </article>
 
-    <div class="proj">
-      <div class="proj-h">
+      <article class="card reveal">
+        <div class="kicker">Platform</div>
         <h3>Partner API platform</h3>
-        <span class="tag">used by partner orgs</span>
-      </div>
-      <p>The external REST API that zakat and wakaf organizations use to push transactions and contacts and pull back reports. I added API-key auth with IP allow-listing, idempotency to stop double-posting, outbound webhooks, and a provisioning endpoint that stands up a whole new tenant — company, user, and credentials — on its own. Documented publicly so partners can self-serve.</p>
-      <div class="tech">REST · API keys · multi-tenant · GitBook docs</div>
-    </div>
+        <p>The external REST API that zakat and wakaf organizations use to push transactions and contacts and pull back reports. I added API-key auth with IP allow-listing, idempotency to stop double-posting, outbound webhooks, and a provisioning endpoint that stands up a whole new tenant (company, user, and credentials) on its own. Documented publicly so partners can self-serve.</p>
+        <div class="tech"><span>REST</span><span>API keys</span><span>multi-tenant</span><span>GitBook docs</span></div>
+      </article>
 
-    <div class="proj">
-      <div class="proj-h">
+      <article class="card reveal">
+        <div class="kicker">Performance</div>
         <h3>Performance on a million-row dataset</h3>
-        <span class="tag">ongoing</span>
-      </div>
-      <p>The contacts table runs into the millions of rows, so a lot of the work is keeping things fast: rewriting queries so they don't load everything into memory, adding the right indexes, removing N+1s, caching the dashboard, and moving heavy imports and media processing into background jobs.</p>
-      <div class="tech">MySQL · Laravel queues · caching</div>
-    </div>
+        <p>The contacts table runs into the millions of rows, so a lot of the work is keeping things fast: rewriting queries so they don't load everything into memory, adding the right indexes, removing N+1s, caching the dashboard, and moving heavy imports and media processing into background jobs.</p>
+        <div class="tech"><span>MySQL</span><span>Laravel queues</span><span>caching</span></div>
+      </article>
 
-    <p class="also"><b>Also built:</b> a support-ticketing module (reply templates, internal notes, live updates); partner self-onboarding with subscriptions and billing cycles; a Datadog observability setup with SLAs and structured logging; and the design-system refresh across the app.</p>
+      <p class="also reveal"><b>Also built:</b> a support-ticketing module (reply templates, internal notes, live updates); partner self-onboarding with subscriptions and billing cycles; a Datadog observability setup with SLAs and structured logging; and the design-system refresh across the app.</p>
+
+    </div>
   </div>
 </section>
 
-<section>
+<section id="experience">
   <div class="wrap">
-    <div class="label">Experience</div>
+    <div class="label reveal">Experience</div>
 
-    <div class="exp">
-      <div class="when">Jul 2025 — now</div>
-      <div class="what">
+    <div class="exp reveal">
+      <div class="when">Jul 2025, now</div>
+      <div>
         <h3>Lead of Technology</h3>
         <div class="co">Innovasia · Indonesia</div>
         <p>Own the architecture of the platform. Shipped the billing engine, the AI funnel feature, the Flow bridge, and the partner API; set up Datadog and the team's SLA practice.</p>
       </div>
     </div>
 
-    <div class="exp">
-      <div class="when">Jan — Jun 2025</div>
-      <div class="what">
-        <h3>Software Engineer — Support &amp; Maintenance</h3>
+    <div class="exp reveal">
+      <div class="when">Jan to Jun 2025</div>
+      <div>
+        <h3>Software Engineer, Support &amp; Maintenance</h3>
         <div class="co">Innovasia · Indonesia</div>
         <p>Fixed 30+ production bugs across broadcast, chat, transactions, and catalog. Optimized slow queries and built the broadcast segmentation filters.</p>
       </div>
     </div>
 
-    <div class="exp">
-      <div class="when">Oct — Dec 2024</div>
-      <div class="what">
+    <div class="exp reveal">
+      <div class="when">Oct to Dec 2024</div>
+      <div>
         <h3>IT Support</h3>
         <div class="co">Tulus Asih Group · Cirebon</div>
         <p>Set up a new branch office: network config, hardware and software troubleshooting.</p>
       </div>
     </div>
 
-    <div class="exp">
-      <div class="when">Feb — Jul 2022</div>
-      <div class="what">
+    <div class="exp reveal">
+      <div class="when">Feb to Jul 2022</div>
+      <div>
         <h3>Big Data Analyst</h3>
         <div class="co">BISA Artifisial Indonesia · Bandung</div>
         <p>Ran a speech-recognition modeling project as PM; gave Python data-visualization webinars.</p>
@@ -219,25 +245,38 @@
   </div>
 </section>
 
-<section>
+<section id="tools">
   <div class="wrap">
-    <div class="label">Tools</div>
-    <div class="tech-list">
-      <b>PHP · Laravel · MySQL</b> for most of what I build, with <b>Node.js</b> for the high-volume send path.<br/>
-      <b>WhatsApp / Meta Graph API · OpenAI API · payment gateways</b> on the integration side.<br/>
-      <b>Queues · schedulers · caching · Datadog</b> for reliability, and <b>JavaScript · Blade · CSS</b> on the front end.
+    <div class="label reveal">Tools</div>
+    <div class="tools">
+      <div class="tool reveal">
+        <h4>Backend</h4>
+        <div class="row"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>Node.js</span><span>REST APIs</span><span>queues</span><span>schedulers</span></div>
+      </div>
+      <div class="tool reveal">
+        <h4>Integrations</h4>
+        <div class="row"><span>WhatsApp / Meta Graph API</span><span>OpenAI API</span><span>payment gateways</span><span>webhooks</span></div>
+      </div>
+      <div class="tool reveal">
+        <h4>Reliability</h4>
+        <div class="row"><span>Datadog</span><span>caching</span><span>idempotency</span><span>query tuning</span></div>
+      </div>
+      <div class="tool reveal">
+        <h4>Frontend</h4>
+        <div class="row"><span>JavaScript</span><span>Blade</span><span>HTML</span><span>CSS</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="education">
   <div class="wrap">
-    <div class="label">Education</div>
-    <div class="exp" style="border-bottom:none;padding-bottom:0">
-      <div class="when">2019 — 2024</div>
-      <div class="what">
+    <div class="label reveal">Education</div>
+    <div class="exp reveal" style="border-bottom:none;padding-bottom:0">
+      <div class="when">2019 to 2024</div>
+      <div>
         <h3>Computer Engineering</h3>
-        <div class="co">Telkom University — Diploma (D3) then Bachelor (S1)</div>
+        <div class="co">Telkom University · Diploma (D3) then Bachelor (S1)</div>
       </div>
     </div>
   </div>
@@ -246,9 +285,13 @@
 <footer>
   <div class="wrap">
     Khairi Hibatullah Ridho · <a href="mailto:khairihr5@gmail.com">khairihr5@gmail.com</a><br/>
-    Hand-written HTML &amp; CSS, hosted on GitHub Pages.
+    Hand-written HTML and CSS, hosted on GitHub Pages.
   </div>
 </footer>
 
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
