@@ -1,305 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Khairi Hibatullah Ridho</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234f46e5'/><text x='50' y='73' font-size='66' font-family='Helvetica,Arial,sans-serif' font-weight='700' fill='white' text-anchor='middle'>K</text></svg>" />
-<meta name="description" content="Khairi Hibatullah Ridho, software engineer and tech lead at Innovasia. I build and run a multi-tenant WhatsApp Business CRM on Laravel: billing systems, partner APIs, and performance at scale." />
-<meta property="og:title" content="Khairi Hibatullah Ridho, Software Engineer" />
-<meta property="og:description" content="I build and run a multi-tenant WhatsApp Business CRM: billing systems, partner APIs, and performance at scale." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://khairihr.github.io/" />
-<meta property="og:image" content="https://khairihr.github.io/og.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Khairi Hibatullah Ridho, Software Engineer" />
-<meta name="twitter:description" content="I lead engineering on a multi-tenant WhatsApp Business CRM: billing systems, partner APIs, and performance at scale." />
-<meta name="twitter:image" content="https://khairihr.github.io/og.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khairi Hibatullah Ridho, backend engineer</title>
+<meta name="description" content="Backend engineer and tech lead at Innovasia. I build billing, integrations and APIs for a WhatsApp Business CRM used by organizations across Indonesia.">
+<link rel="canonical" href="https://khairihr.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://khairihr.github.io/">
+<meta property="og:title" content="Khairi Hibatullah Ridho, backend engineer">
+<meta property="og:description" content="Billing, integrations and APIs for a WhatsApp Business CRM used across Indonesia.">
+<meta property="og:image" content="https://khairihr.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://khairihr.github.io/og.png">
+<meta name="theme-color" content="#fcfcfb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231b1b1a'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Helvetica,Arial,sans-serif' font-weight='600' fill='%23fcfcfb' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibm-plex-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Khairi Hibatullah Ridho","jobTitle":"Lead of Technology","worksFor":{"@type":"Organization","name":"PT Innovasia Inovasi Indonesia","url":"https://innovasia.id"},"url":"https://khairihr.github.io/","email":"mailto:khairihr5@gmail.com","sameAs":["https://github.com/khairihr","https://www.linkedin.com/in/khairihr/"]}
+</script>
 <style>
+@font-face{font-family:"Plex";src:url(assets/fonts/ibm-plex-sans-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex";src:url(assets/fonts/ibm-plex-sans-latin-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Plex";src:url(assets/fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex";src:url(assets/fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url(assets/fonts/ibm-plex-mono-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url(assets/fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --bg:#fcfcfb;
+  --panel:#f1f1ee;
+  --ink:#1b1b1a;
+  --ink-2:#4a4a47;
+  --muted:#686863;
+  --faint:#9a9a94;
+  --line:#e2e2de;
+  --accent:#0e7a4e;
+  --radius:6px;
+  --maxw:1120px;
+  --gutter:clamp(20px,4.5vw,44px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
   :root{
-    --bg:#fdfdfc;
-    --surface:#ffffff;
-    --text:#19191c;
-    --text-2:#3a3a40;
-    --muted:#6c6c74;
-    --faint:#9a9aa2;
-    --accent:#4f46e5;
-    --accent-soft:#eef0fe;
-    --line:#e9e9ec;
-    --maxw:980px;
-    --shadow:0 1px 2px rgba(0,0,0,.03), 0 10px 30px -16px rgba(20,20,40,.14);
+    --bg:#111110;
+    --panel:#1c1c1a;
+    --ink:#ecebe8;
+    --ink-2:#b4b3ae;
+    --muted:#8f8e89;
+    --faint:#6a6964;
+    --line:#2c2c29;
+    --accent:#4cc38a;
+    color-scheme:dark;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-    background:var(--bg);color:var(--text);
-    font-size:16.5px;line-height:1.7;
-    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
-  }
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
-  a{color:var(--accent);text-decoration:none}
-  .mono{font-family:'JetBrains Mono',monospace}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Plex",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+.mono{font-family:"Plex Mono",ui-monospace,monospace}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 
-  /* NAV */
-  nav{position:sticky;top:0;z-index:40;background:rgba(253,253,252,.8);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;height:58px}
-  .brand{font-weight:700;letter-spacing:-.02em;font-size:15.5px;color:var(--text)}
-  .brand span{color:var(--accent)}
-  .nav-links{display:flex;gap:26px;font-size:14px}
-  .nav-links a{color:var(--muted);font-weight:500}
-  .nav-links a:hover{color:var(--text)}
-  @media(max-width:600px){.nav-links a:not(.r){display:none}}
+.top{display:flex;align-items:center;justify-content:space-between;height:68px}
+.top .me{font-weight:500;text-decoration:none;letter-spacing:-.01em}
+.top nav{display:flex;gap:28px;font-size:15px}
+.top nav a{text-decoration:none;color:var(--ink-2)}
+.top nav a:hover{color:var(--ink)}
 
-  /* HERO */
-  header.hero{padding:78px 0 56px}
-  .name{font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:-.035em;line-height:1.05}
-  .role{font-size:clamp(16px,2vw,19px);color:var(--muted);margin-top:12px;font-weight:500}
-  .role b{color:var(--accent);font-weight:600}
-  .intro{margin-top:28px;max-width:620px}
-  .intro p{margin-bottom:16px;color:var(--text-2)}
-  .intro p:last-child{margin-bottom:0}
-  .actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}
-  .btn{display:inline-flex;align-items:center;gap:7px;font-size:14.5px;font-weight:500;padding:9px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--text);transition:border-color .18s,transform .18s,box-shadow .18s}
-  .btn:hover{border-color:#d4d4da;transform:translateY(-1px);box-shadow:var(--shadow)}
-  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-  .btn.primary:hover{background:#4338ca;border-color:#4338ca}
-  .btn .a{color:var(--faint);font-size:12px}
-  .btn.primary .a{color:rgba(255,255,255,.7)}
-  .avail{margin-top:26px;font-size:14px;color:var(--muted);display:inline-flex;align-items:center;gap:9px}
-  .avail .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+.hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(40px,6vw,80px);align-items:end;padding:clamp(48px,8vw,88px) 0 clamp(64px,9vw,104px)}
+.hero h1{font-size:clamp(40px,5.4vw,60px);font-weight:600;line-height:1.06;letter-spacing:-.028em}
+.lede{font-size:clamp(18px,1.7vw,21px);line-height:1.5;color:var(--ink-2);margin-top:22px;max-width:30ch}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 18px;border-radius:var(--radius);font-size:15px;font-weight:500;text-decoration:none;white-space:nowrap;transition:background-color .2s,border-color .2s,transform .12s}
+.btn:active{transform:translateY(1px)}
+.btn-solid{background:var(--ink);color:var(--bg)}
+.btn-solid:hover{background:var(--ink-2)}
+.btn-line{border:1px solid var(--line);color:var(--ink)}
+.btn-line:hover{border-color:var(--muted)}
+.btn svg{width:16px;height:16px;flex:none}
 
-  /* SECTION */
-  section{padding:54px 0;border-top:1px solid var(--line)}
-  .label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--faint);text-transform:uppercase;margin-bottom:30px;display:flex;align-items:center;gap:12px}
-  .label::after{content:'';height:1px;flex:1;background:var(--line)}
+.activity{position:relative;background:var(--panel);border-radius:var(--radius);padding:22px 22px 16px}
+.activity h2{font-size:15px;font-weight:600;letter-spacing:0}
+.activity .sub{font-size:13.5px;color:var(--muted);margin-top:2px;max-width:44ch}
+.plot{position:relative;margin-top:26px}
+.plot svg{display:block;width:100%;height:auto;overflow:visible}
+.plot .bar{fill:var(--accent)}
+.plot .bar.on{fill:var(--ink)}
+.plot .base{stroke:var(--line)}
+.plot .grid{stroke:var(--line);stroke-dasharray:2 3}
+.plot .mark{stroke:var(--muted);stroke-dasharray:3 3}
+.axis{position:relative;height:18px;margin-top:6px;font-size:12px;color:var(--muted)}
+.axis span{position:absolute;top:0;white-space:nowrap}
+.note{position:absolute;top:-22px;font-size:12px;color:var(--muted);white-space:nowrap;padding-left:6px}
+.ylab{position:absolute;left:0;font-size:12px;color:var(--faint)}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12.5px;line-height:1.35;padding:6px 9px;border-radius:var(--radius);white-space:nowrap;transform:translate(-50%,-100%);opacity:0;transition:opacity .12s}
+.tip.show{opacity:1}
 
-  .about{max-width:660px}
-  .about p{color:var(--text-2);margin-bottom:16px}
-  .about p:last-child{margin-bottom:0}
+.sec{padding:clamp(64px,9vw,104px) 0;border-top:1px solid var(--line)}
+.sec h2.title{font-size:clamp(26px,2.6vw,32px);font-weight:600;letter-spacing:-.02em;line-height:1.15;margin-bottom:clamp(32px,4vw,48px)}
 
-  /* WORK */
-  .work{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
-  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#e0e0e6}
-  .card.feat{grid-column:1 / -1}
-  .kicker{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
-  .card h3{font-size:18px;font-weight:600;letter-spacing:-.01em;margin-bottom:9px}
-  .card p{color:var(--text-2);font-size:15px}
-  .tech{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
-  .tech span{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);background:var(--bg);border:1px solid var(--line);padding:3px 9px;border-radius:7px}
-  .also{font-size:15px;color:var(--text-2);margin-top:18px;grid-column:1 / -1}
-  .also b{color:var(--text);font-weight:600}
-  @media(max-width:640px){.work{grid-template-columns:1fr}}
+.case{display:grid;gap:14px}
+.row{padding:44px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0;padding-top:0}
+.row-lead{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,72px)}
+.row-pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,72px)}
+.row-shot{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,5vw,56px);align-items:start}
+.fig{font-size:clamp(36px,4.3vw,54px);font-weight:500;line-height:1.05;letter-spacing:-.035em;font-variant-numeric:tabular-nums lining-nums}
+.fig .arw{color:var(--faint);font-weight:400;padding:0 .18em}
+.fig-note{font-size:14.5px;color:var(--muted);max-width:32ch;margin-top:8px;line-height:1.5}
+.case .fig-note{margin-top:-6px}
+.case h3{font-size:21px;font-weight:600;letter-spacing:-.012em;line-height:1.3}
+.case p{color:var(--ink-2);font-size:16.5px}
+.stack{font-family:"Plex Mono",ui-monospace,monospace;font-size:13px;color:var(--muted);line-height:1.6}
+.more{font-size:15.5px;font-weight:500;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
+.more:hover{text-decoration-color:var(--ink)}
+.shot{display:block;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:1440/900}
+.also{margin-top:8px;padding-top:36px;border-top:1px solid var(--line);color:var(--ink-2);max-width:74ch}
+.also b{color:var(--ink);font-weight:600}
 
-  /* EXPERIENCE */
-  .exp{display:flex;gap:26px;padding:20px 0;border-bottom:1px solid var(--line)}
-  .exp:last-child{border-bottom:none;padding-bottom:0}
-  .exp .when{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--faint);flex:none;width:130px;padding-top:3px}
-  .exp h3{font-size:16.5px;font-weight:600}
-  .exp .co{font-size:14.5px;color:var(--muted);margin-bottom:7px}
-  .exp p{font-size:15px;color:var(--text-2)}
-  @media(max-width:560px){.exp{flex-direction:column;gap:5px}.exp .when{width:auto}}
+.jobs{display:grid;gap:0}
+.job{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding:26px 0;border-top:1px solid var(--line)}
+.job:first-child{border-top:0;padding-top:0}
+.job .when{font-family:"Plex Mono",ui-monospace,monospace;font-size:13.5px;color:var(--muted);padding-top:3px}
+.job h3{font-size:18px;font-weight:600;letter-spacing:-.01em}
+.job .org{color:var(--muted);font-size:15px;margin-top:1px}
+.job p{color:var(--ink-2);font-size:16px;margin-top:8px;max-width:68ch}
 
-  /* TOOLS */
-  .tools{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-  .tool h4{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:11px}
-  .tool .row{display:flex;flex-wrap:wrap;gap:7px}
-  .tool .row span{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--text-2);background:var(--surface);border:1px solid var(--line);padding:4px 10px;border-radius:8px}
-  @media(max-width:560px){.tools{grid-template-columns:1fr}}
+.prose{max-width:64ch}
+.prose p{font-size:clamp(18px,1.6vw,20px);line-height:1.6;color:var(--ink-2)}
+.prose p+p{margin-top:20px}
 
-  /* FOOTER */
-  footer{border-top:1px solid var(--line);padding:36px 0 64px;font-size:13.5px;color:var(--faint);line-height:1.9}
-  footer a{color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.cols h3{font-size:15px;font-weight:600;margin-bottom:10px}
+.cols ul{list-style:none;color:var(--ink-2);font-size:15.5px;line-height:1.75}
+.edu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin-top:56px;padding-top:36px;border-top:1px solid var(--line)}
+.edu h3{font-size:17px;font-weight:600}
+.edu p{color:var(--ink-2);font-size:15.5px;margin-top:4px}
 
-  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
-  .reveal.in{opacity:1;transform:none}
+.end{padding:clamp(72px,10vw,120px) 0 48px;border-top:1px solid var(--line)}
+.end .big{font-size:clamp(28px,3.4vw,40px);font-weight:600;letter-spacing:-.022em;line-height:1.15;max-width:18ch}
+.end .actions{margin-top:28px}
+.links{display:flex;flex-wrap:wrap;gap:24px;margin-top:28px;font-size:15.5px}
+.links a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
+.links a:hover{text-decoration-color:var(--ink)}
+.small{margin-top:72px;font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.hero-copy>*{animation:rise .7s cubic-bezier(.16,1,.3,1) both}
+.hero-copy>*:nth-child(2){animation-delay:.06s}
+.hero-copy>*:nth-child(3){animation-delay:.12s}
+.activity{animation:rise .7s .18s cubic-bezier(.16,1,.3,1) both}
+.plot .bar{transform-box:fill-box;transform-origin:50% 100%;animation:grow .8s cubic-bezier(.16,1,.3,1) both;animation-delay:calc(.3s + var(--i) * 7ms)}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;align-items:start}
+  .row-lead,.row-pair,.row-shot{grid-template-columns:1fr}
+  .row-pair>.case+.case{padding-top:44px;border-top:1px solid var(--line)}
+  .cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .top nav{gap:18px}
+  .top nav .opt{display:none}
+  .job{grid-template-columns:1fr;gap:6px}
+  .cols,.edu{grid-template-columns:1fr}
+  .small{flex-direction:column}
+}
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="wrap nav-in">
-    <a href="#" class="brand">Khairi<span>.</span></a>
-    <div class="nav-links">
+<div class="wrap">
+  <header class="top">
+    <a class="me" href="./">Khairi Hibatullah Ridho</a>
+    <nav aria-label="Primary">
       <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="cv.html" class="r" target="_blank" rel="noopener">Résumé</a>
-    </div>
-  </div>
-</nav>
+      <a class="opt" href="#experience">Experience</a>
+      <a href="Khairi-Hibatullah-Ridho-Resume.pdf">Résumé</a>
+    </nav>
+  </header>
 
-<header class="hero">
+  <main>
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-copy">
+      <h1>Khairi Hibatullah Ridho</h1>
+      <p class="lede">Backend engineer and tech lead at Innovasia, where I build billing, integrations and APIs for a WhatsApp Business CRM.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="mailto:khairihr5@gmail.com">Email me</a>
+        <a class="btn btn-line" href="Khairi-Hibatullah-Ridho-Resume.pdf">Résumé
+          <svg viewBox="0 0 256 256" aria-hidden="true"><path fill="currentColor" d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,124.69V32a8,8,0,0,0-16,0v92.69L93.66,98.34a8,8,0,0,0-11.32,11.32Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <figure class="activity" aria-labelledby="act-title">
+      <h2 id="act-title">Commits per week</h2>
+      <p class="sub">1,116 commits I authored in the product's private repository, February 2025 to September 2026.</p>
+      <div class="plot" id="plot">
+        <svg viewBox="0 0 420 125" role="img" aria-label="Bar chart of weekly commits from February 2025 to September 2026, rising from under 20 a week in 2025 to as many as 78 a week in 2026."><defs><clipPath id="clip"><rect x="-2" y="-10" width="424" height="134"/></clipPath></defs><line class="grid" x1="0" x2="420" y1="64.0" y2="64.0"/><line class="mark" x1="95.0" x2="95.0" y1="0" y2="124"/><g clip-path="url(#clip)"><g class="bar-g" data-w="2025-02-17" data-c="8"><rect class="bar" style="--i:0" x="0.90" y="112.00" width="3.2" height="14.00" rx="1.4"/></g><g class="bar-g" data-w="2025-02-24" data-c="1"><rect class="bar" style="--i:1" x="5.90" y="122.50" width="3.2" height="3.50" rx="1.4"/></g><g class="bar-g" data-w="2025-03-03" data-c="11"><rect class="bar" style="--i:2" x="10.90" y="107.50" width="3.2" height="18.50" rx="1.4"/></g><g class="bar-g" data-w="2025-03-10" data-c="10"><rect class="bar" style="--i:3" x="15.90" y="109.00" width="3.2" height="17.00" rx="1.4"/></g><g class="bar-g" data-w="2025-03-17" data-c="1"><rect class="bar" style="--i:4" x="20.90" y="122.50" width="3.2" height="3.50" rx="1.4"/></g><g class="bar-g" data-w="2025-03-24" data-c="6"><rect class="bar" style="--i:5" x="25.90" y="115.00" width="3.2" height="11.00" rx="1.4"/></g><g class="bar-g" data-w="2025-03-31" data-c="0"></g><g class="bar-g" data-w="2025-04-07" data-c="0"></g><g class="bar-g" data-w="2025-04-14" data-c="2"><rect class="bar" style="--i:8" x="40.90" y="121.00" width="3.2" height="5.00" rx="1.4"/></g><g class="bar-g" data-w="2025-04-21" data-c="3"><rect class="bar" style="--i:9" x="45.90" y="119.50" width="3.2" height="6.50" rx="1.4"/></g><g class="bar-g" data-w="2025-04-28" data-c="2"><rect class="bar" style="--i:10" x="50.90" y="121.00" width="3.2" height="5.00" rx="1.4"/></g><g class="bar-g" data-w="2025-05-05" data-c="11"><rect class="bar" style="--i:11" x="55.90" y="107.50" width="3.2" height="18.50" rx="1.4"/></g><g class="bar-g" data-w="2025-05-12" data-c="12"><rect class="bar" style="--i:12" x="60.90" y="106.00" width="3.2" height="20.00" rx="1.4"/></g><g class="bar-g" data-w="2025-05-19" data-c="7"><rect class="bar" style="--i:13" x="65.90" y="113.50" width="3.2" height="12.50" rx="1.4"/></g><g class="bar-g" data-w="2025-05-26" data-c="10"><rect class="bar" style="--i:14" x="70.90" y="109.00" width="3.2" height="17.00" rx="1.4"/></g><g class="bar-g" data-w="2025-06-02" data-c="4"><rect class="bar" style="--i:15" x="75.90" y="118.00" width="3.2" height="8.00" rx="1.4"/></g><g class="bar-g" data-w="2025-06-09" data-c="0"></g><g class="bar-g" data-w="2025-06-16" data-c="2"><rect class="bar" style="--i:17" x="85.90" y="121.00" width="3.2" height="5.00" rx="1.4"/></g><g class="bar-g" data-w="2025-06-23" data-c="3"><rect class="bar" style="--i:18" x="90.90" y="119.50" width="3.2" height="6.50" rx="1.4"/></g><g class="bar-g" data-w="2025-06-30" data-c="3"><rect class="bar" style="--i:19" x="95.90" y="119.50" width="3.2" height="6.50" rx="1.4"/></g><g class="bar-g" data-w="2025-07-07" data-c="5"><rect class="bar" style="--i:20" x="100.90" y="116.50" width="3.2" height="9.50" rx="1.4"/></g><g class="bar-g" data-w="2025-07-14" data-c="5"><rect class="bar" style="--i:21" x="105.90" y="116.50" width="3.2" height="9.50" rx="1.4"/></g><g class="bar-g" data-w="2025-07-21" data-c="15"><rect class="bar" style="--i:22" x="110.90" y="101.50" width="3.2" height="24.50" rx="1.4"/></g><g class="bar-g" data-w="2025-07-28" data-c="8"><rect class="bar" style="--i:23" x="115.90" y="112.00" width="3.2" height="14.00" rx="1.4"/></g><g class="bar-g" data-w="2025-08-04" data-c="1"><rect class="bar" style="--i:24" x="120.90" y="122.50" width="3.2" height="3.50" rx="1.4"/></g><g class="bar-g" data-w="2025-08-11" data-c="5"><rect class="bar" style="--i:25" x="125.90" y="116.50" width="3.2" height="9.50" rx="1.4"/></g><g class="bar-g" data-w="2025-08-18" data-c="14"><rect class="bar" style="--i:26" x="130.90" y="103.00" width="3.2" height="23.00" rx="1.4"/></g><g class="bar-g" data-w="2025-08-25" data-c="1"><rect class="bar" style="--i:27" x="135.90" y="122.50" width="3.2" height="3.50" rx="1.4"/></g><g class="bar-g" data-w="2025-09-01" data-c="9"><rect class="bar" style="--i:28" x="140.90" y="110.50" width="3.2" height="15.50" rx="1.4"/></g><g class="bar-g" data-w="2025-09-08" data-c="4"><rect class="bar" style="--i:29" x="145.90" y="118.00" width="3.2" height="8.00" rx="1.4"/></g><g class="bar-g" data-w="2025-09-15" data-c="9"><rect class="bar" style="--i:30" x="150.90" y="110.50" width="3.2" height="15.50" rx="1.4"/></g><g class="bar-g" data-w="2025-09-22" data-c="2"><rect class="bar" style="--i:31" x="155.90" y="121.00" width="3.2" height="5.00" rx="1.4"/></g><g class="bar-g" data-w="2025-09-29" data-c="6"><rect class="bar" style="--i:32" x="160.90" y="115.00" width="3.2" height="11.00" rx="1.4"/></g><g class="bar-g" data-w="2025-10-06" data-c="8"><rect class="bar" style="--i:33" x="165.90" y="112.00" width="3.2" height="14.00" rx="1.4"/></g><g class="bar-g" data-w="2025-10-13" data-c="7"><rect class="bar" style="--i:34" x="170.90" y="113.50" width="3.2" height="12.50" rx="1.4"/></g><g class="bar-g" data-w="2025-10-20" data-c="7"><rect class="bar" style="--i:35" x="175.90" y="113.50" width="3.2" height="12.50" rx="1.4"/></g><g class="bar-g" data-w="2025-10-27" data-c="5"><rect class="bar" style="--i:36" x="180.90" y="116.50" width="3.2" height="9.50" rx="1.4"/></g><g class="bar-g" data-w="2025-11-03" data-c="4"><rect class="bar" style="--i:37" x="185.90" y="118.00" width="3.2" height="8.00" rx="1.4"/></g><g class="bar-g" data-w="2025-11-10" data-c="6"><rect class="bar" style="--i:38" x="190.90" y="115.00" width="3.2" height="11.00" rx="1.4"/></g><g class="bar-g" data-w="2025-11-17" data-c="6"><rect class="bar" style="--i:39" x="195.90" y="115.00" width="3.2" height="11.00" rx="1.4"/></g><g class="bar-g" data-w="2025-11-24" data-c="11"><rect class="bar" style="--i:40" x="200.90" y="107.50" width="3.2" height="18.50" rx="1.4"/></g><g class="bar-g" data-w="2025-12-01" data-c="10"><rect class="bar" style="--i:41" x="205.90" y="109.00" width="3.2" height="17.00" rx="1.4"/></g><g class="bar-g" data-w="2025-12-08" data-c="6"><rect class="bar" style="--i:42" x="210.90" y="115.00" width="3.2" height="11.00" rx="1.4"/></g><g class="bar-g" data-w="2025-12-15" data-c="7"><rect class="bar" style="--i:43" x="215.90" y="113.50" width="3.2" height="12.50" rx="1.4"/></g><g class="bar-g" data-w="2025-12-22" data-c="6"><rect class="bar" style="--i:44" x="220.90" y="115.00" width="3.2" height="11.00" rx="1.4"/></g><g class="bar-g" data-w="2025-12-29" data-c="6"><rect class="bar" style="--i:45" x="225.90" y="115.00" width="3.2" height="11.00" rx="1.4"/></g><g class="bar-g" data-w="2026-01-05" data-c="12"><rect class="bar" style="--i:46" x="230.90" y="106.00" width="3.2" height="20.00" rx="1.4"/></g><g class="bar-g" data-w="2026-01-12" data-c="11"><rect class="bar" style="--i:47" x="235.90" y="107.50" width="3.2" height="18.50" rx="1.4"/></g><g class="bar-g" data-w="2026-01-19" data-c="5"><rect class="bar" style="--i:48" x="240.90" y="116.50" width="3.2" height="9.50" rx="1.4"/></g><g class="bar-g" data-w="2026-01-26" data-c="9"><rect class="bar" style="--i:49" x="245.90" y="110.50" width="3.2" height="15.50" rx="1.4"/></g><g class="bar-g" data-w="2026-02-02" data-c="10"><rect class="bar" style="--i:50" x="250.90" y="109.00" width="3.2" height="17.00" rx="1.4"/></g><g class="bar-g" data-w="2026-02-09" data-c="9"><rect class="bar" style="--i:51" x="255.90" y="110.50" width="3.2" height="15.50" rx="1.4"/></g><g class="bar-g" data-w="2026-02-16" data-c="11"><rect class="bar" style="--i:52" x="260.90" y="107.50" width="3.2" height="18.50" rx="1.4"/></g><g class="bar-g" data-w="2026-02-23" data-c="17"><rect class="bar" style="--i:53" x="265.90" y="98.50" width="3.2" height="27.50" rx="1.4"/></g><g class="bar-g" data-w="2026-03-02" data-c="5"><rect class="bar" style="--i:54" x="270.90" y="116.50" width="3.2" height="9.50" rx="1.4"/></g><g class="bar-g" data-w="2026-03-09" data-c="24"><rect class="bar" style="--i:55" x="275.90" y="88.00" width="3.2" height="38.00" rx="1.4"/></g><g class="bar-g" data-w="2026-03-16" data-c="10"><rect class="bar" style="--i:56" x="280.90" y="109.00" width="3.2" height="17.00" rx="1.4"/></g><g class="bar-g" data-w="2026-03-23" data-c="0"></g><g class="bar-g" data-w="2026-03-30" data-c="8"><rect class="bar" style="--i:58" x="290.90" y="112.00" width="3.2" height="14.00" rx="1.4"/></g><g class="bar-g" data-w="2026-04-06" data-c="1"><rect class="bar" style="--i:59" x="295.90" y="122.50" width="3.2" height="3.50" rx="1.4"/></g><g class="bar-g" data-w="2026-04-13" data-c="14"><rect class="bar" style="--i:60" x="300.90" y="103.00" width="3.2" height="23.00" rx="1.4"/></g><g class="bar-g" data-w="2026-04-20" data-c="2"><rect class="bar" style="--i:61" x="305.90" y="121.00" width="3.2" height="5.00" rx="1.4"/></g><g class="bar-g" data-w="2026-04-27" data-c="13"><rect class="bar" style="--i:62" x="310.90" y="104.50" width="3.2" height="21.50" rx="1.4"/></g><g class="bar-g" data-w="2026-05-04" data-c="9"><rect class="bar" style="--i:63" x="315.90" y="110.50" width="3.2" height="15.50" rx="1.4"/></g><g class="bar-g" data-w="2026-05-11" data-c="21"><rect class="bar" style="--i:64" x="320.90" y="92.50" width="3.2" height="33.50" rx="1.4"/></g><g class="bar-g" data-w="2026-05-18" data-c="36"><rect class="bar" style="--i:65" x="325.90" y="70.00" width="3.2" height="56.00" rx="1.4"/></g><g class="bar-g" data-w="2026-05-25" data-c="30"><rect class="bar" style="--i:66" x="330.90" y="79.00" width="3.2" height="47.00" rx="1.4"/></g><g class="bar-g" data-w="2026-06-01" data-c="22"><rect class="bar" style="--i:67" x="335.90" y="91.00" width="3.2" height="35.00" rx="1.4"/></g><g class="bar-g" data-w="2026-06-08" data-c="14"><rect class="bar" style="--i:68" x="340.90" y="103.00" width="3.2" height="23.00" rx="1.4"/></g><g class="bar-g" data-w="2026-06-15" data-c="19"><rect class="bar" style="--i:69" x="345.90" y="95.50" width="3.2" height="30.50" rx="1.4"/></g><g class="bar-g" data-w="2026-06-22" data-c="54"><rect class="bar" style="--i:70" x="350.90" y="43.00" width="3.2" height="83.00" rx="1.4"/></g><g class="bar-g" data-w="2026-06-29" data-c="8"><rect class="bar" style="--i:71" x="355.90" y="112.00" width="3.2" height="14.00" rx="1.4"/></g><g class="bar-g" data-w="2026-07-06" data-c="26"><rect class="bar" style="--i:72" x="360.90" y="85.00" width="3.2" height="41.00" rx="1.4"/></g><g class="bar-g" data-w="2026-07-13" data-c="24"><rect class="bar" style="--i:73" x="365.90" y="88.00" width="3.2" height="38.00" rx="1.4"/></g><g class="bar-g" data-w="2026-07-20" data-c="12"><rect class="bar" style="--i:74" x="370.90" y="106.00" width="3.2" height="20.00" rx="1.4"/></g><g class="bar-g" data-w="2026-07-27" data-c="50"><rect class="bar" style="--i:75" x="375.90" y="49.00" width="3.2" height="77.00" rx="1.4"/></g><g class="bar-g" data-w="2026-08-03" data-c="59"><rect class="bar" style="--i:76" x="380.90" y="35.50" width="3.2" height="90.50" rx="1.4"/></g><g class="bar-g" data-w="2026-08-10" data-c="26"><rect class="bar" style="--i:77" x="385.90" y="85.00" width="3.2" height="41.00" rx="1.4"/></g><g class="bar-g" data-w="2026-08-17" data-c="58"><rect class="bar" style="--i:78" x="390.90" y="37.00" width="3.2" height="89.00" rx="1.4"/></g><g class="bar-g" data-w="2026-08-24" data-c="33"><rect class="bar" style="--i:79" x="395.90" y="74.50" width="3.2" height="51.50" rx="1.4"/></g><g class="bar-g" data-w="2026-08-31" data-c="78"><rect class="bar" style="--i:80" x="400.90" y="7.00" width="3.2" height="119.00" rx="1.4"/></g><g class="bar-g" data-w="2026-09-07" data-c="50"><rect class="bar" style="--i:81" x="405.90" y="49.00" width="3.2" height="77.00" rx="1.4"/></g><g class="bar-g" data-w="2026-09-14" data-c="17"><rect class="bar" style="--i:82" x="410.90" y="98.50" width="3.2" height="27.50" rx="1.4"/></g><g class="bar-g" data-w="2026-09-21" data-c="40"><rect class="bar" style="--i:83" x="415.90" y="64.00" width="3.2" height="62.00" rx="1.4"/></g></g><line class="base" x1="0" x2="420" y1="124.5" y2="124.5"/></svg><span class="note" style="left:22.62%">Lead from July 2025</span><span class="ylab" aria-hidden="true" style="top:calc(51.20% - 19px)">40 a week</span>
+        <div class="tip" id="tip" role="status" aria-live="polite"></div>
+      </div>
+      <div class="axis" aria-hidden="true"><span style="left:0">Feb 2025</span><span style="left:54.76%;transform:translateX(-50%)">Jan 2026</span><span style="right:0">Sep 2026</span></div>
+      <table class="sr-only"><caption>Commits per month</caption><tr><th>Month</th><th>Commits</th></tr><tr><td>February 2025</td><td>9</td></tr><tr><td>March 2025</td><td>28</td></tr><tr><td>April 2025</td><td>6</td></tr><tr><td>May 2025</td><td>41</td></tr><tr><td>June 2025</td><td>9</td></tr><tr><td>July 2025</td><td>33</td></tr><tr><td>August 2025</td><td>24</td></tr><tr><td>September 2025</td><td>26</td></tr><tr><td>October 2025</td><td>28</td></tr><tr><td>November 2025</td><td>30</td></tr><tr><td>December 2025</td><td>32</td></tr><tr><td>January 2026</td><td>40</td></tr><tr><td>February 2026</td><td>47</td></tr><tr><td>March 2026</td><td>40</td></tr><tr><td>April 2026</td><td>34</td></tr><tr><td>May 2026</td><td>99</td></tr><tr><td>June 2026</td><td>109</td></tr><tr><td>July 2026</td><td>112</td></tr><tr><td>August 2026</td><td>187</td></tr><tr><td>September 2026</td><td>182</td></tr></table>
+    </figure>
+  </section>
+  </main>
+</div>
+
+<section class="sec" id="work">
   <div class="wrap">
-    <h1 class="name reveal">Khairi Hibatullah Ridho</h1>
-    <div class="role reveal">Software engineer · <b>Tech lead at Innovasia</b></div>
+    <h2 class="title">Selected work</h2>
 
-    <div class="intro reveal">
-      <p>I lead engineering on a multi-tenant WhatsApp Business CRM used by organizations across Indonesia. It handles millions of contacts, billing against Meta's messaging platform, and the APIs that partners integrate with. I started there fixing bugs in early 2025 and grew into the role.</p>
-      <p>I'm most useful on the parts that are easy to get wrong: billing that can't lose money, APIs other companies build on, and keeping things fast as the data grows.</p>
+    <div class="row row-lead">
+      <div>
+        <div class="fig">737,317</div>
+        <p class="fig-note">billable messages from three months of production traffic checked before switching billing models. One had no price.</p>
+      </div>
+      <article class="case">
+        <h3>Billing every WhatsApp message</h3>
+        <p>Some partners pay Meta's messaging fees through the company, so any send that isn't metered is money lost. I built the quota engine that prices each message from Meta's category rates and deducts prepaid credit idempotently from status webhooks, with deadlock-safe batch jobs and reconciliation reports. The same data now drives postpaid monthly billing, starting October 2026.</p>
+        <div class="stack">Laravel, MySQL, Meta webhooks, queued and scheduled jobs</div>
+      </article>
     </div>
 
-    <div class="actions reveal">
-      <a href="mailto:khairihr5@gmail.com" class="btn primary">Get in touch <span class="a">↗</span></a>
-      <a href="https://github.com/khairihr" target="_blank" rel="noopener" class="btn">GitHub <span class="a">↗</span></a>
-      <a href="https://www.linkedin.com/in/khairihr/" target="_blank" rel="noopener" class="btn">LinkedIn <span class="a">↗</span></a>
-      <a href="cv.html" target="_blank" rel="noopener" class="btn">Résumé <span class="a">↗</span></a>
+    <div class="row row-pair">
+      <article class="case">
+        <div class="fig">11.4 s<span class="arw">&rarr;</span>4 ms</div>
+        <p class="fig-note">per run, for a query that fired every minute</p>
+        <h3>A full-table scan hiding in the broadcast service</h3>
+        <p>Database CPU spiked whenever broadcasts sped up, yet the sending code looked fine. The cause was a cleanup query that scanned 5.5 million message rows every 60 seconds, almost always to update nothing. Bounding it to an index range removed the load, and sending concurrency went from 10 to 25.</p>
+        <div class="stack">Node.js, MySQL, EXPLAIN, Datadog</div>
+      </article>
+      <article class="case">
+        <div class="fig">2.6 s<span class="arw">&rarr;</span>75 ms</div>
+        <p class="fig-note">for the heaviest view, with identical results across 20 checks</p>
+        <h3>Analytics that stay fast across 250 tenants</h3>
+        <p>An insight module where organizations follow donors, conversations and broadcast conversion. Nightly roll-ups precompute each contact's monthly pattern, a 39-second conversion query now takes 1.8 seconds, and the first full roll-up covered all 250 tenants in 7 minutes without a failure.</p>
+        <div class="stack">Laravel, MySQL, nightly roll-ups, caching</div>
+      </article>
     </div>
 
-    <div class="avail reveal"><span class="dot"></span> Always glad to talk about interesting problems and good engineering</div>
-  </div>
-</header>
-
-<section id="about">
-  <div class="wrap">
-    <div class="label reveal">About</div>
-    <div class="about reveal">
-      <p>The product is a Laravel monolith with a Node.js service for high-volume message sending, talking to Meta's Graph API and serving many tenant companies from one codebase. The core architecture predates me; over the past year I've grown from maintenance work into leading the engineering, which mostly means keeping it reliable, cleaning up the parts that had grown messy, and building the newer systems on top.</p>
-      <p>I lean pragmatic. I'd rather ship something correct and observable than something clever, and I spend real time on the unglamorous parts: idempotency, indexes, lock contention, and logs you can actually debug from. I also care about how software feels, so I led a UI refresh across the whole product.</p>
+    <div class="row row-shot">
+      <a class="shot" href="https://innovasia.id/" target="_blank" rel="noopener">
+        <img src="assets/innovasia-id.jpg" width="1440" height="900" loading="lazy" alt="Home page of innovasia.id, the company site I rebuilt in Laravel">
+      </a>
+      <article class="case">
+        <div class="fig">88</div>
+        <p class="fig-note">old URLs from Search Console, each redirected or retired on purpose</p>
+        <h3>innovasia.id, moved off WordPress</h3>
+        <p>I rebuilt the company site as a Laravel app with its own CMS for articles, case studies and partner pages, plus lead forms that feed Notion. All 64 articles kept their exact URLs, so search traffic still lands where it used to. Live since July 2026.</p>
+        <div class="stack">Laravel, Blade, MySQL, Cloudflare, Traefik</div>
+        <a class="more" href="https://innovasia.id/" target="_blank" rel="noopener">Visit innovasia.id</a>
+      </article>
     </div>
+
+    <div class="row row-pair">
+      <article class="case">
+        <h3>APIs other organizations build on</h3>
+        <p>Zakat and wakaf organizations sync donations and pull reports through the partner REST API, where I added API keys with IP allow-lists, idempotent writes, outbound webhooks and one call that provisions a whole tenant. For WhatsApp Flows I rebuilt the webhook bridge so each receiver URL has its own signing secret, the way Stripe signs webhooks, and tenants can recover a drifted encryption key without a support ticket.</p>
+        <div class="stack">REST, HMAC signatures, idempotency keys, multi-tenancy</div>
+      </article>
+      <article class="case">
+        <h3>LLM features with a meter attached</h3>
+        <p>A sales-funnel classifier that labels each conversation's stage and sends follow-ups, on rate-limited workers that tell &ldquo;out of credit&rdquo; apart from &ldquo;rate-limited&rdquo;. WhatsApp Insight, a standalone Laravel 12 app that sorts chats by sentiment, emotion and topic and reuses earlier results so history is paid for once. Most recently, Meta's Business AI agent wired into the CRM, including the handover between AI, automations and human agents.</p>
+        <div class="stack">OpenAI API, queue workers, Meta Business AI</div>
+      </article>
+    </div>
+
+    <p class="also"><b>Also built:</b> a monitoring product for organizations that run many WhatsApp teams, an internal revenue dashboard that reconciles six revenue streams, product catalog sync to Meta Commerce, a support ticketing module, an in-app interactive tutorial, and a design-system refresh across the whole app.</p>
   </div>
 </section>
 
-<section id="work">
+<section class="sec" id="experience">
   <div class="wrap">
-    <div class="label reveal">Selected work</div>
-    <div class="work">
-
-      <article class="card feat reveal">
-        <div class="kicker">Billing</div>
-        <h3>Kuota Pesan, a usage-based billing engine</h3>
-        <p>Some partners pay Meta's messaging fees through the company's own card, so any send that wasn't metered was money quietly lost. I built the engine that prices each message from Meta's pricing data and deducts prepaid credit in real time from the billing webhook: idempotent and deadlock-safe, so it holds up against live traffic. It rolled out in stages (report, then charge, then block) behind safety gates, with reconciliation jobs to recover historical leakage.</p>
-        <div class="tech"><span>Laravel</span><span>MySQL</span><span>Meta Graph API</span><span>scheduled &amp; queued jobs</span><span>idempotency</span></div>
-      </article>
-
-      <article class="card reveal">
-        <div class="kicker">AI feature</div>
-        <h3>AI sales-funnel labeling</h3>
-        <p>Reads each contact's conversation and labels their funnel stage using an LLM. A dedicated worker runs it rate-limited and tells the difference between "out of credit" and "rate-limited", so it never wastes spend retrying a call that can't succeed. Labels show up inline in the chat list; usage is metered and billed.</p>
-        <div class="tech"><span>OpenAI API</span><span>queue workers</span><span>Laravel</span></div>
-      </article>
-
-      <article class="card reveal">
-        <div class="kicker">Integration</div>
-        <h3>Meta Flow webhook bridge</h3>
-        <p>Reworked how Meta Flow callbacks are handled so each receiver URL carries its own secret, the way Stripe signs webhooks, letting one tenant route different flows to different backends. I removed the N+1 queries on the hot path, added caching and timeouts, and built a self-serve fix for when a tenant's public key drifts out of sync (previously a support ticket every time).</p>
-        <div class="tech"><span>Webhooks</span><span>HMAC signing</span><span>caching</span></div>
-      </article>
-
-      <article class="card reveal">
-        <div class="kicker">Platform</div>
-        <h3>Partner API platform</h3>
-        <p>The external REST API that zakat and wakaf organizations use to push transactions and contacts and pull back reports. I added API-key auth with IP allow-listing, idempotency to stop double-posting, outbound webhooks, and a provisioning endpoint that stands up a whole new tenant (company, user, and credentials) on its own. Documented publicly so partners can self-serve.</p>
-        <div class="tech"><span>REST</span><span>API keys</span><span>multi-tenant</span><span>GitBook docs</span></div>
-      </article>
-
-      <article class="card reveal">
-        <div class="kicker">Performance</div>
-        <h3>Performance on a million-row dataset</h3>
-        <p>The contacts table runs into the millions of rows, so a lot of the work is keeping things fast: rewriting queries so they don't load everything into memory, adding the right indexes, removing N+1s, caching the dashboard, and moving heavy imports and media processing into background jobs.</p>
-        <div class="tech"><span>MySQL</span><span>Laravel queues</span><span>caching</span></div>
-      </article>
-
-      <p class="also reveal"><b>Also built:</b> a support-ticketing module (reply templates, internal notes, live updates); partner self-onboarding with subscriptions and billing cycles; a Datadog observability setup with SLAs and structured logging; and the design-system refresh across the app.</p>
-
-    </div>
-  </div>
-</section>
-
-<section id="experience">
-  <div class="wrap">
-    <div class="label reveal">Experience</div>
-
-    <div class="exp reveal">
-      <div class="when">Jul 2025, now</div>
-      <div>
-        <h3>Lead of Technology</h3>
-        <div class="co">Innovasia · Indonesia</div>
-        <p>Lead engineering on the platform: keep it reliable, optimize what had grown messy, and build new systems on top such as the billing engine, the AI funnel feature, the Flow bridge, and the partner API. Set up Datadog and the team's SLA practice.</p>
+    <h2 class="title">Experience</h2>
+    <div class="jobs">
+      <div class="job">
+        <div class="when">Jul 2025 to now</div>
+        <div>
+          <h3>Lead of Technology</h3>
+          <div class="org">PT Innovasia Inovasi Indonesia, Bandung</div>
+          <p>Lead engineering on the CRM: reliability, performance and the newer systems (billing, partner API, analytics, AI features). Datadog APM and SLOs, and first responder when production misbehaves.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="exp reveal">
-      <div class="when">Jan to Jun 2025</div>
-      <div>
-        <h3>Software Engineer, Support &amp; Maintenance</h3>
-        <div class="co">Innovasia · Indonesia</div>
-        <p>Fixed 30+ production bugs across broadcast, chat, transactions, and catalog. Optimized slow queries and built the broadcast segmentation filters.</p>
+      <div class="job">
+        <div class="when">Jan to Jun 2025</div>
+        <div>
+          <h3>Software Engineer, support and maintenance</h3>
+          <div class="org">PT Innovasia Inovasi Indonesia, Bandung</div>
+          <p>Fixed 30+ production bugs across broadcast, chat, transactions and catalog, sped up slow queries on million-row tables, and built broadcast segmentation.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="exp reveal">
-      <div class="when">Oct to Dec 2024</div>
-      <div>
-        <h3>IT Support</h3>
-        <div class="co">Tulus Asih Group · Cirebon</div>
-        <p>Set up a new branch office: network config, hardware and software troubleshooting.</p>
+      <div class="job">
+        <div class="when">Oct to Dec 2024</div>
+        <div>
+          <h3>IT Support</h3>
+          <div class="org">PT Tulus Asih Group, Cirebon</div>
+          <p>Set up a new branch office: network, hardware and software.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="exp reveal">
-      <div class="when">Feb to Jul 2022</div>
-      <div>
-        <h3>Big Data Analyst</h3>
-        <div class="co">BISA Artifisial Indonesia · Bandung</div>
-        <p>Ran a speech-recognition modeling project as PM; gave Python data-visualization webinars.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="tools">
-  <div class="wrap">
-    <div class="label reveal">Tools</div>
-    <div class="tools">
-      <div class="tool reveal">
-        <h4>Backend</h4>
-        <div class="row"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>Node.js</span><span>REST APIs</span><span>queues</span><span>schedulers</span></div>
-      </div>
-      <div class="tool reveal">
-        <h4>Integrations</h4>
-        <div class="row"><span>WhatsApp / Meta Graph API</span><span>OpenAI API</span><span>payment gateways</span><span>webhooks</span></div>
-      </div>
-      <div class="tool reveal">
-        <h4>Reliability</h4>
-        <div class="row"><span>Datadog</span><span>caching</span><span>idempotency</span><span>query tuning</span></div>
-      </div>
-      <div class="tool reveal">
-        <h4>Frontend</h4>
-        <div class="row"><span>JavaScript</span><span>Blade</span><span>HTML</span><span>CSS</span></div>
+      <div class="job">
+        <div class="when">Feb to Jul 2022</div>
+        <div>
+          <h3>Big Data Analyst</h3>
+          <div class="org">PT BISA Artifisial Indonesia, Bandung</div>
+          <p>Project manager for a speech-recognition modeling project; taught Python data-visualization webinars.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="education">
+<section class="sec" id="approach">
   <div class="wrap">
-    <div class="label reveal">Education</div>
-    <div class="exp reveal" style="border-bottom:none;padding-bottom:0">
-      <div class="when">2019 to 2024</div>
+    <h2 class="title">How I work</h2>
+    <div class="prose">
+      <p>The CRM is a Laravel monolith with a Node.js service for high-volume sending, talking to Meta's Graph API and serving 200+ organizations from one codebase. The core architecture predates me. I started on bug fixes in early 2025 and grew into leading the engineering, which mostly means keeping it reliable, cleaning up what had grown messy, and building the newer systems on top.</p>
+      <p>I lean pragmatic. I'd rather ship something correct and observable than something clever, and I measure before I change anything: most of the numbers on this page started as an EXPLAIN plan, a Datadog trace or a count run against production. I also care how software feels, which is why I led the UI refresh across the product.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="stack">
+  <div class="wrap">
+    <h2 class="title">Stack</h2>
+    <div class="cols">
+      <div><h3>Backend</h3><ul><li>PHP 8, Laravel</li><li>MySQL</li><li>Node.js</li><li>Queues and schedulers</li><li>REST APIs</li></ul></div>
+      <div><h3>Integrations</h3><ul><li>WhatsApp Cloud API</li><li>Meta Graph API, Flows, Catalog</li><li>Payment gateways, VA and QRIS</li><li>Signed webhooks</li><li>OpenAI API</li></ul></div>
+      <div><h3>Operations</h3><ul><li>Datadog APM and SLOs</li><li>Nginx, PHP-FPM</li><li>Cloudflare</li><li>Linux servers</li></ul></div>
+      <div><h3>Frontend</h3><ul><li>JavaScript</li><li>Blade</li><li>HTML and CSS</li><li>Design systems</li></ul></div>
+    </div>
+    <div class="edu">
       <div>
-        <h3>Computer Engineering</h3>
-        <div class="co">Telkom University · Diploma (D3) then Bachelor (S1)</div>
+        <h3>Telkom University</h3>
+        <p>Bachelor of Engineering, Computer Engineering, 2024. Diploma, Computer Engineering, 2022.</p>
+      </div>
+      <div>
+        <h3>Certificates</h3>
+        <p>Cisco CCNAv7 (2020, 2021), Data Analytics Essentials and Introduction to Cybersecurity (2024).</p>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
+<footer class="end">
   <div class="wrap">
-    Khairi Hibatullah Ridho · <a href="mailto:khairihr5@gmail.com">khairihr5@gmail.com</a><br/>
-    Hand-written HTML and CSS, hosted on GitHub Pages.
+    <p class="big">The fastest way to reach me is email.</p>
+    <div class="actions">
+      <a class="btn btn-solid" href="mailto:khairihr5@gmail.com">Email me</a>
+    </div>
+    <div class="links">
+      <a href="mailto:khairihr5@gmail.com">khairihr5@gmail.com</a>
+      <a href="https://www.linkedin.com/in/khairihr/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/khairihr" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="small">
+      <span>Indonesia (UTC+7), working remotely.</span>
+      <span>Hand-written HTML and CSS, set in IBM Plex. Updated September 2026.</span>
+    </div>
   </div>
 </footer>
 
 <script>
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+(function(){
+  var plot=document.getElementById('plot'), tip=document.getElementById('tip');
+  if(!plot) return;
+  var svg=plot.querySelector('svg'), bars=svg.querySelectorAll('.bar-g'), n=bars.length, on=null;
+  var fmt=new Intl.DateTimeFormat('en',{day:'numeric',month:'short',year:'numeric'});
+  function show(e){
+    var r=svg.getBoundingClientRect(), i=Math.min(n-1,Math.max(0,Math.floor((e.clientX-r.left)/r.width*n)));
+    var g=bars[i], c=+g.dataset.c, d=new Date(g.dataset.w+'T00:00:00');
+    if(on) on.classList.remove('on');
+    on=g.querySelector('.bar'); if(on) on.classList.add('on');
+    tip.textContent='Week of '+fmt.format(d)+': '+c+(c===1?' commit':' commits');
+    var x=(i+.5)/n*r.width, pr=plot.getBoundingClientRect();
+    var top=on? on.getBoundingClientRect().top-pr.top : r.bottom-pr.top;
+    tip.style.left=Math.max(70,Math.min(r.width-70,x))+'px';
+    tip.style.top=(top-8)+'px';
+    tip.classList.add('show');
+  }
+  function hide(){tip.classList.remove('show'); if(on){on.classList.remove('on'); on=null}}
+  svg.addEventListener('pointermove',show);
+  svg.addEventListener('pointerdown',show);
+  svg.addEventListener('pointerleave',hide);
+})();
 </script>
 </body>
 </html>
